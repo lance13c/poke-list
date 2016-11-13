@@ -6,9 +6,9 @@ import { connect } from 'react-redux'
 
 class PokeList extends Component {
 	renderList() {
-		return this.props.books.map((pokemon) => {
+		return this.props.pokemon.map((poke) => {
 			return (
-				<li className="list-group-item"> {pokemon.name} </li>
+				<li className="list-group-item" key={poke.name}> {poke.name} </li>
 			);
 		});
 	}
@@ -26,7 +26,7 @@ function mapStateToProps(state) {
 	// Whatever is returned will be the props in Poke List
 	
 	return {
-		books: state.books
+		pokemon: state.pokemon
 	}
 }
 
