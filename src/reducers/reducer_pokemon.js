@@ -3,9 +3,9 @@
  */
 export default () => {
 	return [
-		{ name: 'Onix' },
-		{ name: 'Nidoran' },
-		{ name: 'Pikachu' },
-		{ name: 'Poliwag' },
+		{ name: 'Onix', hp: 20 },
+		{ name: 'Nidoran', hp: 10},
+		{ name: 'Pikachu', hp: 50 },
+		{ name: 'Poliwag', hp: 70 },
 	]
 }
